@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paul Immaculate · Portfolio</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="antialiased bg-pink-50 text-pink-950 font-sans leading-relaxed tracking-wide scroll-smooth">
+
+        <!-- Fixed header – cleaner spacing, consistent border -->
+        <header class="bg-white/95 backdrop-blur-sm flex justify-between items-center px-6 py-3 shadow-sm fixed top-0 left-0 w-full z-50 border-b border-pink-200/70">
+            <div class="flex items-center gap-3">
+                <div class="bg-linear-to-br from-pink-400 to-pink-300 w-12 h-12 rounded-full flex items-center justify-center shadow-inner">
+                    <span class="font-mono font-bold text-2xl text-white tracking-tighter">I</span>
+                </div>
+                <span class="font-mono font-bold text-xl text-pink-950 tracking-tight">Paul Immaculate</span>
+            </div>
+            <nav class="flex gap-8 text-[15px] font-medium text-pink-900/80">
+                <a href="#home" class="hover:text-pink-950 transition-colors">Home</a>
+                <a href="#about" class="hover:text-pink-950 transition-colors">About</a>
+                <a href="#skills" class="hover:text-pink-950 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-pink-950 transition-colors">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main content with padding-top for fixed header -->
+        <main class="pt-22 max-w-6xl mx-auto px-6">
+
+            <!-- Hero section – larger type, better rhythm -->
+            <section class="mt-6 mb-16" id="home">
+                <h1 class="font-mono text-6xl font-bold text-pink-950 leading-tight tracking-tight">
+                    Hi, I'm Immaculate
+                </h1>
+                <p class="text-2xl font-medium text-pink-900/80 mt-3 max-w-2xl">
+                    Computer Science Student & Frontend Web Developer
+                </p>
+                <div class="flex gap-4 mt-8">
+                    <button class="bg-transparent border-2 border-pink-800 text-pink-900 px-6 py-2.5 rounded-lg font-medium transition-colors duration-200 hover:bg-pink-900 hover:text-white"><a href="#projects" class="text-pink-900 hover:text-white"> 
+                            View My Projects
+                    </button>
+                    <button class="bg-pink-900 text-white px-6 py-2.5 rounded-lg font-medium border-2 border-pink-900 transition-colors duration-200 hover:bg-pink-800"> <a href="#contact" class="text-white hover:text-white"> Contact Me</a>
+    
+                    </button>
+                </div>
+            </section>
+
+            <!-- About card – softer shadow, better padding -->
+            <section class="bg-white rounded-2xl border border-pink-200 shadow-sm p-8 mb-16" id="about">
+                <h2 class="font-mono text-3xl font-bold text-pink-950 mb-4">About Me.</h2>
+                <p class="text-pink-900/90 text-[17px] leading-relaxed max-w-4xl indent-8">
+                    I'm a Computer Science student interested in web development and technology. I'm currently building my skills in HTML, Tailwind CSS, JavaScript and Python through academic projects and practical development. I enjoy turning ideas into functional, responsive websites and I'm continuously learning new technologies to improve my development skills.
+                </p>
+            </section>
+
+            <!-- Skills section – cleaner grid, no extra hr clutter -->
+            <section class="mb-16">
+                <div class="grid grid-cols-3 gap-8 max-w-3xl mx-auto">
+                    <div>
+                        <h3 class="font-mono text-xl font-semibold text-pink-950 border-b border-pink-300 pb-2 mb-3">Frontend</h3>
+                        <ul class="text-pink-900/80 space-y-1 text-[15px] list-disc pl-5">
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>Tailwind CSS</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-mono text-xl font-semibold text-pink-950 border-b border-pink-300 pb-2 mb-3">Programming</h3>
+                        <ul class="text-pink-900/80 space-y-1 text-[15px] list-disc pl-5">
+                            <li>Python</li>
+                            <li>Netlify</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-mono text-xl font-semibold text-pink-950 border-b border-pink-300 pb-2 mb-3">Tools</h3>
+                        <ul class="text-pink-900/80 space-y-1 text-[15px] list-disc pl-5">
+                            <li>VS Code</li>
+                            <li>Figma</li>
+                            <li>Chrome DevTools</li>
+                            <li>PyCharm</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects – three cards with consistent height and subtle border -->
+            <section class="mb-20 " id="projects">
+                <h2 class="font-mono text-3xl font-bold text-pink-950 mb-8">Selected Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-2xl border border-pink-200 p-6 flex flex-col h-full shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md">
+                        <h3 class="font-mono text-xl font-bold text-pink-950 mb-2">Nexus Academy</h3>
+                        <p class="text-pink-800/80 text-sm leading-relaxed mb-4 grow">
+                            A training website where you learn tech courses. Built with a clean, modular approach.
+                        </p>
+                        <div class="mt-auto">
+                            <p class="text-xs uppercase tracking-wider text-pink-700 font-semibold mb-1">Built using</p>
+                            <p class="text-sm text-pink-900 font-medium mb-4">HTML · JavaScript · Tailwind</p>
+                            <a href="https://github.com/Amariah-design/Training-Website-Project" class="inline-block border-2 border-pink-800 text-pink-900 px-4 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-pink-900 hover:text-white">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-2xl border border-pink-200 p-6 flex flex-col h-full shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md">
+                        <h3 class="font-mono text-xl font-bold text-pink-950 mb-2">A RealEstate Website</h3>
+                        <p class="text-pink-800/80 text-sm leading-relaxed mb-4 grow">
+                            A modern real estate website with a focus on user experience and responsive design.
+                        </p>
+                        <div class="mt-auto">
+                            <p class="text-xs uppercase tracking-wider text-pink-700 font-semibold mb-1">Built using</p>
+                            <p class="text-sm text-pink-900 font-medium mb-4">HTML · JavaScript · Tailwind . React</p>
+                            <a href="https://github.com/Amariah-design/myRealestate" class="inline-block border-2 border-pink-800 text-pink-900 px-4 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-pink-900 hover:text-white">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-2xl border border-pink-200 p-6 flex flex-col h-full shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md">
+                        <h3 class="font-mono text-xl font-bold text-pink-950 mb-2">A Bridal Website</h3>
+                        <p class="text-pink-800/80 text-sm leading-relaxed mb-4 grow">
+                            A website for a bridal shop, showcasing dresses and accessories with a focus on aesthetics and user experience.
+                        </p>
+                        <div class="mt-auto">
+                            <p class="text-xs uppercase tracking-wider text-pink-700 font-semibold mb-1">Built using</p>
+                            <p class="text-sm text-pink-900 font-medium mb-4">HTML · JavaScript · Tailwind . React</p>
+                            <a href="https://github.com/Amariah-design/mybridalweb" class="inline-block border-2 border-pink-800 text-pink-900 px-4 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-pink-900 hover:text-white">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact area – integrated form + links -->
+            <section class="mb-20" id="contact">
+                <h2 class="font-mono text-3xl font-bold text-pink-950 mb-8">Get in touch</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-sm uppercase tracking-wider text-pink-700 font-semibold mb-1">Email</p>
+                            <a href="mailto:immaculatepaulose@gmail.com" class="text-pink-900 text-lg hover:underline underline-offset-4">
+                                immaculatepaulose@gmail.com
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-sm uppercase tracking-wider text-pink-700 font-semibold mb-1">Phone</p>
+                            <a href="tel:+2349060976683" class="text-pink-900 text-lg hover:underline underline-offset-4">
+                                +2349060976683
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-sm uppercase tracking-wider text-pink-700 font-semibold mb-1">GitHub</p>
+                            <a href="https://github.com/Amariah-design/Designs-By-Amariah" target="_blank" class="text-pink-900 text-lg hover:underline underline-offset-4 break-all">
+                                github.com/Amariah-design
+                            </a>
+                        </div>
+                        <div class="pt-2">
+                            <p class="text-sm text-pink-800/70 italic">I'm open to freelance projects and collaborations, and new opportunities!. Let's create something great together!</p>
+                        </div>
+                    </div>
+
+                    <!-- Simple form – no emoji, clean input + button
+                    <div class="bg-white rounded-2xl border border-pink-200 p-6 shadow-sm">
+                        <label for="text" class="block text-sm font-medium text-pink-900 mb-1">Your message</label>
+                        <input
+                            type="text"
+                            id="text"
+                            placeholder="Enter a message"
+                            class="w-full border border-pink-300 bg-pink-50/50 p-3 rounded-lg text-pink-950 placeholder-pink-400/70 focus:border-pink-800 focus:bg-white focus:outline-none focus:ring-3 focus:ring-pink-900/10 transition-colors"
+                        >
+                        <button
+                            onclick="enroll('sent')"
+                            class="mt-4 w-full bg-pink-900 text-white px-6 py-2.5 rounded-lg font-medium border-2 border-pink-900 hover:bg-pink-800 transition-colors duration-200"
+                        >
+                            Send message
+                        </button>
+                        <p class="text-xs text-pink-700/60 mt-3">I'll reply within 24 hours.</p>
+                    </div> -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer – darker, minimal, professional -->
+        <footer class="bg-linear-to-r from-pink-950 to-pink-900 text-pink-100 border-t border-pink-700/30">
+            <div class="max-w-6xl mx-auto px-6 py-8 text-center text-sm font-mono tracking-wide">
+                © 2026 Immaculate. All rights reserved.
+            </div>
+        </footer>
+
+        <!-- <script>
+            function enroll(sent) {
+                alert("Your email has been " + sent + " successfully!");
+            }
+        </script> -->
+    </body>
+</html>
